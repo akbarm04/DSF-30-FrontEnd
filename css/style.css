@@ -72,6 +72,13 @@ header{
 
 }
 
+.navbar a.active {
+    background: var(--third-color);
+    color: var(--bg-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 10px;
+}   
+
 #menu-icon{
     color: var(--bg-color);
     font-size: 35px;
@@ -169,7 +176,7 @@ header.sticky{
 
 .row-items{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(21       0px, auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
@@ -197,9 +204,6 @@ header.sticky{
     cursor: pointer;
 }
 
-/* .container-img img:hover {
-    transform: scale(1.05); /* Memperbesar gambar saat di-hover */
-/* }  */
 
 .container-box h4{
     font-size: 24px;
@@ -230,7 +234,7 @@ header.sticky{
 
 .package-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 5rem;
@@ -250,14 +254,6 @@ header.sticky{
 }
 
 .thum h3{
-    /* position: absolute;
-    font-size: 25px;
-    font-weight: 600;
-    text-align: right;
-    color: var(--text-color);
-    top: 36px;
-    right: 40px; */
-
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -300,7 +296,7 @@ header.sticky{
 
 .destination-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 5rem;
@@ -502,7 +498,8 @@ header.sticky{
         color: var(--text-color);
     }  
     .home{
-        height: 88vh;
+        height: 100vh;
+        padding-left: 70px;
     }
     .navbar{
         position: absolute;
@@ -556,8 +553,17 @@ header.sticky{
     .text{
         text-align: center;
     }
+    
     .home{
-        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
         transition: .2s;
+    }
+    
+    .home-text {
+        max-width: 90%;
     }
 }
