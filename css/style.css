@@ -499,7 +499,6 @@ header.sticky{
     }  
     .home{
         height: 100vh;
-        padding-left: 70px;
     }
     .navbar{
         position: absolute;
