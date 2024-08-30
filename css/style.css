@@ -176,7 +176,7 @@ header.sticky{
 
 .row-items{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21       0px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
